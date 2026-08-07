@@ -49,27 +49,26 @@ public class StudentProgram{
             ch = sc.nextInt();
             switch (ch) {
                 case 1:
-                    sc.nextLine();
-                    System.out.print("Enter Student Name: ");
+                    System.out.println("Enter Student Name: ");
                     String name= sc.nextLine();
-                    System.out.print("Enter Roll Number: ");
+                    System.out.println("Enter Roll Number: ");
                     int roll = sc.nextInt();
-                    System.out.print("Enter Marks in Subject 1: ");
+                    System.out.println("Enter Marks in Subject 1: ");
                     double m1 = sc.nextDouble();
-                    System.out.print("Enter Marks in Subject 2: ");
+                    System.out.println("Enter Marks in Subject 2: ");
                     double m2 = sc.nextDouble();
-                    System.out.print("Enter Marks in Subject 3: ");
+                    System.out.println("Enter Marks in Subject 3: ");
                     double m3 = sc.nextDouble();
                     double total = m1 + m2 + m3;
-                    double percentage = total / 3;
+                    double perc = total / 3;
                     System.out.println("\nStudent Details");
                     System.out.println("Name       : " + name);
                     System.out.println("Roll No    : " + roll);
                     System.out.println("Total Marks: " + total);
-                    System.out.println("Percentage : " + percentage + "%");
+                    System.out.println("Percentage : " + perc + "%");
                     break;
                 case 2:
-                    System.out.print("Enter a Number: ");
+                    System.out.println("Enter a Number: ");
                     int num = sc.nextInt();
                     if (num % 2 == 0)
                         System.out.println("Even Number");
@@ -78,11 +77,11 @@ public class StudentProgram{
                     break;
 
                 case 3:
-                    System.out.print("Enter First Number: ");
+                    System.out.println("Enter First Number: ");
                     int a = sc.nextInt();
-                    System.out.print("Enter Second Number: ");
+                    System.out.println("Enter Second Number: ");
                     int b = sc.nextInt();
-                    System.out.print("Enter Third Number: ");
+                    System.out.println("Enter Third Number: ");
                     int c = sc.nextInt();
                     int largest = a;
                     if (b > largest)
@@ -92,7 +91,7 @@ public class StudentProgram{
                     System.out.println("Largest Number = " + largest);
                     break;
                 case 4:
-                    System.out.print("Enter Percentage: ");
+                    System.out.println("Enter Percentage: ");
                     double per = sc.nextDouble();
                     if (per >= 90)
                         System.out.println("Grade A");
@@ -106,7 +105,7 @@ public class StudentProgram{
                         System.out.println("Grade F");
                     break;
                 case 5:
-                    System.out.print("Enter Day Number (1-7): ");
+                    System.out.println("Enter Day Number (1-7): ");
                     int day = sc.nextInt();
                     switch (day) {
                         case 1:
@@ -135,7 +134,7 @@ public class StudentProgram{
                     }
                     break;
                 case 6:
-                    System.out.print("Enter Number: ");
+                    System.out.println("Enter Number: ");
                     int numb = sc.nextInt();
                     System.out.println("Multiplication Table:");
                     for (int i = 1; i <= 10; i++) {
@@ -143,15 +142,15 @@ public class StudentProgram{
                     }
                     break;
                 case 7:
-                    System.out.print("Enter N: ");
+                    System.out.println("Enter N: ");
                     int n = sc.nextInt();
                     for (int i = 1; i <= n; i++) {
-                        System.out.print(i + " ");
+                        System.out.println(i + " ");
                     }
                     System.out.println();
                     break;
                 case 8:
-                    System.out.print("Enter N: ");
+                    System.out.println("Enter N: ");
                     int numN = sc.nextInt();
                     int sum = 0;
                     for (int i = 1; i <= numN; i++) {
@@ -161,7 +160,7 @@ public class StudentProgram{
                     break;
 
                 case 9:
-                    System.out.print("Enter Number of Terms: ");
+                    System.out.println("Enter Number of Terms: ");
                     int terms = sc.nextInt();
                     int first = 0, second = 1;
                     System.out.println("Fibonacci Series:");
@@ -174,12 +173,12 @@ public class StudentProgram{
                     System.out.println();
                     break;
                 case 10:
-                    System.out.print("Enter Number: ");
+                    System.out.println("Enter Number: ");
                     int fact = sc.nextInt();
                     System.out.println("Factorial = " + s.factorial(fact));
                     break;
                 case 11:
-                    System.out.print("Enter Number: ");
+                    System.out.println("Enter Number: ");
                     int prime = sc.nextInt();
                     if (s.isPrime(prime))
                         System.out.println("Prime Number");
@@ -187,7 +186,7 @@ public class StudentProgram{
                         System.out.println("Not a Prime Number");
                     break;
                 case 12:
-                    System.out.print("Enter First Number: ");
+                    System.out.println("Enter First Number: ");
                     int x = sc.nextInt();
                     System.out.print("Enter Second Number: ");
                     int y = sc.nextInt();
@@ -195,10 +194,10 @@ public class StudentProgram{
                     break;
 
                 case 13:
-                    System.out.print("Enter Radius: ");
+                    System.out.println("Enter Radius: ");
                     double radius = sc.nextDouble();
 
-                    System.out.printf("Area = %.2f\n", s.area(radius));
+                    System.out.println("Area = "+ s.area(radius));
                     break;
 
                 case 14:
