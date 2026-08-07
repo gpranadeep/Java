@@ -184,17 +184,17 @@ public class Library {
         System.out.println("Triangle Area = " +
                 a.area(12.0, 6.0));
         System.out.println("\nMethod Overriding");
-        Vehicle v = new Car();
+        Car v = new Car();
         v.display();
         Bike b = new Bike();
         b.display();
         System.out.println("\nAbstraction");
-        Shape c = new Circle();
-        Shape r = new Rectangle();
+        Circle c = new Circle();
+        Rectangle r = new Rectangle();
         c.draw();
         r.draw();
         System.out.println("\nInterface");
-        Printable p = new Report();
+        Report p = new Report();
         p.print();
     }
 }
