@@ -49,6 +49,7 @@ public class StudentProgram{
             ch = sc.nextInt();
             switch (ch) {
                 case 1:
+                    sc.nextLine();
                     System.out.println("Enter Student Name: ");
                     String name= sc.nextLine();
                     System.out.println("Enter Roll Number: ");
@@ -207,6 +208,7 @@ public class StudentProgram{
                 default:
                     System.out.println("Invalid Choice!");
             }
-        } while (ch != 0);
+        } while (ch != 14);
+        sc.close();
     }
 }
