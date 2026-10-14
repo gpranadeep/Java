@@ -1,0 +1,15 @@
+import java.util.*;
+class HashSetDemo {
+    public static void main(String[] args) {
+        HashSet<Integer> s = new HashSet<>();
+        s.add(10); s.add(20); s.add(30); s.add(10);
+        System.out.println("Set: " + s);
+        System.out.println("Contains 20: " + s.contains(20));
+        System.out.println("Size: " + s.size());
+        s.remove(20);
+        System.out.println("After remove: " + s);
+        System.out.println("Empty: " + s.isEmpty());
+        s.clear();
+        System.out.println("After clear: " + s);
+    }
+}
